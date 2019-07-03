@@ -21,8 +21,8 @@ BuildRequires: perl(Alien::Build::Plugin::Build::SearchDep)
 BuildRequires: perl(Alien::Build::Plugin::Prefer::BadVersion)
 BuildRequires: perl(ExtUtils::CBuilder)
 BuildRequires: perl(ExtUtils::MakeMaker)
-BuildRequires: perl(Test2::V0)
-BuildRequires: perl(Test::Alien)
+#BuildRequires: perl(Test2::V0)
+#BuildRequires: perl(Test::Alien)
 BuildRequires: pkgconfig(libxml-2.0)
 Requires:   %mklibname xml2 _2
 %description
@@ -40,6 +40,6 @@ Alien::Libxml2 - Download and install libxml2
 %make_install
 
 %files
-%doc Changes INSTALL LICENSE META.json META.yml MYMETA.yml README
+%doc Changes INSTALL LICENSE META.json META.yml README
 %{_mandir}/man3/*
 %perl_vendorarch/*
