@@ -24,7 +24,8 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 #BuildRequires: perl(Test2::V0)
 #BuildRequires: perl(Test::Alien)
 BuildRequires: pkgconfig(libxml-2.0)
-Requires:   %mklibname xml2 _2
+Requires:   python-libxml2
+
 %description
 Alien::Libxml2 - Download and install libxml2
 
