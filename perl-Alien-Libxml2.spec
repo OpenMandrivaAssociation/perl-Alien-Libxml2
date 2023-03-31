@@ -6,7 +6,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    1
+Release:    2
 
 Summary:    Alien package for libxml2
 License:    GPLv1+ or Artistic
