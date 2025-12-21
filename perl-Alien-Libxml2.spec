@@ -14,6 +14,7 @@ Group:      Development/Perl
 Url:        https://metacpan.org/release/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Alien/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires: perl(Alien::Base)
 BuildRequires: perl(Alien::Build)
 BuildRequires: perl(Alien::Build::MM)
