@@ -1,18 +1,16 @@
 %define upstream_name    Alien-Libxml2
-%define upstream_version 0.09
-
 %define debug_package %{nil}
 %{?perl_default_filter}
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    2
+Version:    0.09
+Release:    3
 
 Summary:    Alien package for libxml2
 License:    GPLv1+ or Artistic
 Group:      Development/Perl
 Url:        https://metacpan.org/release/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Alien/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Alien/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Alien::Base)
@@ -31,7 +29,7 @@ Requires:   python-libxml2
 Alien::Libxml2 - Download and install libxml2
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
