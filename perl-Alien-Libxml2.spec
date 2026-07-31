@@ -3,8 +3,8 @@
 %{?perl_default_filter}
 
 Name:       perl-%{upstream_name}
-Version:    0.09
-Release:    3
+Version:    0.20
+Release:    1
 
 Summary:    Alien package for libxml2
 License:    GPLv1+ or Artistic
@@ -29,7 +29,7 @@ Requires:   python-libxml2
 Alien::Libxml2 - Download and install libxml2
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n Alien-Libxml2-0.20
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
