@@ -3,7 +3,7 @@
 %{?perl_default_filter}
 
 Name:       perl-%{upstream_name}
-Version:    0.20
+Version:	0.20
 Release:    1
 
 Summary:    Alien package for libxml2
