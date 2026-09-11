@@ -23,6 +23,7 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 #BuildRequires: perl(Test2::V0)
 #BuildRequires: perl(Test::Alien)
 BuildRequires: pkgconfig(libxml-2.0)
+BuildRequires:	perl(Alien::Build::Plugin::Download::GitLab)
 Requires:   python-libxml2
 
 %description
